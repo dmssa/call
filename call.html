@@ -1,0 +1,21 @@
+<html>
+<head>
+    <style>
+        #tel{
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            telElem=document.getElementById('tel');
+            e=document.createEvent('MouseEvents');
+            e.initMouseEvent('click',true,true);
+            telElem.dispatchEvent(e);
+        //    window.open('','_self').close();
+        }
+    </script>
+</head>
+<body>
+    <a id='tel' href="tel:+79062801574">Набрать номер</a>
+</body>
+</html>
